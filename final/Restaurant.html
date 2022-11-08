@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!--
+    Project Assignment
+    
+    Starting Page of Pat's of henderson
+    Author: Beijing to KTM to Beijing
+    Date: 10/15/2022   
+
+    Filename: home.html
+   -->
+   <title>La Plaque</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background-image: url("menu.jpg");
+  background-repeat:no-repeat; 
+   background-size: cover;
+   background-attachment: fixed;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url('home_gumbo.jpg');
+   background-repeat:no-repeat; 
+   background-size: cover;
+   background-attachment: fixed;
+   width:auto;
+   opacity: 0.8;
+   color:rgb(240, 247, 245)
+   
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  max-width: 100%;
+  max-height:100%;
+  object-fit: cover;
+  margin-right: 200px;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+   <img src="logo2.png" usemap="#home" style="height:200px; width:300px;">
+   <map name="home">
+      <area shape="rect" coords="0,0,500,700" href="home.html" alt="home">
+   </map>
+</div>
+
+<div class="topnav">
+   <a href="home.html">Home</a>
+   <a href="menu.html">MENU</a>
+   <a href="Restaurant.html">Resterant</a>
+   <a href="Order.html">Orders</a>
+   <a href="booking.html" style="float:right">BOOKING</a>
+</div>
+<div class="card">
+   <h1>OUR FAMILY LEGACY</h1>
+   <div>
+      <img src="logo2.png" alt="">
+      We want our website to show our restaurant as a fine dining experience that offers a taste of cajun cuisine. 
+      We would like to display our menu, in a format very similar to what they would see in person at the restaurant, 
+      information about our origins and our restaurant with images of the inner decor of the restaurant, 
+      and testimonials from customers that will draw in more customers on separate pages.
+       We would also like a page to show the awards our restaurant has received. We would like to have some pictures 
+       of our recognizable dishes on the main home page. We also want to give the option to users to book reservations
+        at least a week in advance.
+   </div>
+
+</div>
+  
+<div  class="card">
+   <footer>
+      Mobile Panini &#9832 31 West Avenue, Lake Charles &nbsp 70601 &#9832 337-555-2188
+   </footer>
+</div>  
+
+</body>
+
+</html>

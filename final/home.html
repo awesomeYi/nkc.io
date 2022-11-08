@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+   <!--
+    Project Assignment
+    
+    Starting Page of Pat's of henderson
+    Author: Beijing to KTM to Beijing
+    Date: 10/15/2022   
+
+    Filename: home.html
+   -->
+   <title>La Plaque</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial;
+  padding: 10px;
+  background: #015205;
+}
+
+/* Header/Blog Title */
+.header {
+  padding: 30px;
+  text-align: center;
+  background-image: url('home_gumbo.jpg');
+   background-repeat:no-repeat; 
+   background-size: cover;
+   background-attachment: fixed;
+   width:auto;
+   opacity: 0.8;
+   color:rgb(240, 247, 245)
+   
+}
+
+.header h1 {
+  font-size: 50px;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create two unequal columns that floats next to each other */
+/* Left column */
+.leftcolumn {   
+  float: left;
+  width: 75%;
+}
+
+/* Right column */
+.rightcolumn {
+  float: left;
+  width: 25%;
+  background-color: #f1f1f1;
+  padding-left: 20px;
+}
+
+/* Fake image */
+.fakeimg {
+  max-width: 100%;
+  max-height:100%;
+  object-fit: cover;
+  margin-right: 200px;
+  padding: 20px;
+}
+
+/* Add a card effect for articles */
+.card {
+  background-color: white;
+  padding: 20px;
+  margin-top: 20px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Footer */
+.footer {
+  padding: 20px;
+  text-align: center;
+  background: #ddd;
+  margin-top: 20px;
+}
+
+/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 800px) {
+  .leftcolumn, .rightcolumn {   
+    width: 100%;
+    padding: 0;
+  }
+}
+
+/* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .topnav a {
+    float: none;
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1 >LA PLAQUE</h1>
+  <h4>LOUISIANA'S FLAVOR</h3>
+</div>
+
+<div class="topnav">
+   <a href="home.html">Home</a>
+   <a href="menu.html">MENU</a>
+   <a href="Restaurant.html">Resterant</a>
+   <a href="Order.html">Orders</a>
+   <a href="booking.html" style="float:right">BOOKING</a>
+</div>
+
+<div class="row">
+  <div class="leftcolumn">
+    <div class="card">
+      <h2>LA PLAQUE</h2>
+      <h5>PURPOSE</h5>
+      <div>
+        <img src="shrimp_pat.jpg" style="height:200px; width:200px;">
+        <img src="crawfish.jpg" style="height:200px; width:200px; ">
+        <img src="gumbo.jpg" style="height:200px; width:200px; float:center;">
+        <img src="fried.jpg" style="height:200px; width:200px; float: center;">
+
+
+    </div>
+      
+      <p>We want our website to show our restaurant as a fine dining experience that offers a taste of
+        cajun cuisine. We would like to display our menu, in a format very similar to what they would see
+        in person at the restaurant, information about our origins and our restaurant with images of the
+        inner decor of the restaurant, and testimonials from customers that will draw in more customers
+        on separate pages. We would also like a page to show the awards our restaurant has received.
+        We would like to have some pictures of our recognizable dishes on the main home page. We
+        also want to give the option to users to book reservations at least a week in advance.
+        </p>
+    </div>
+    <div class="card">
+      <h2>TITLE HEADING</h2>
+      <h5>Title description, Sep 2, 2017</h5>
+      <div class="fakeimg" style="height:200px;">Image</div>
+      
+      <p>Our audience/user base will be anyone who wishes to enjoy authentic cajun dishes in a classy
+        environment. Due to the high prices of the menu items, we expect most users to be older.
+        Because of this, the site should be easy to navigate and avoid complex layouts. Text on the site
+        should be clear and easy to read, even for those with poor sight. All clickable elements should
+        be big so that our users can easily use them. All images should be clear and not involve any
+        harsh colors that may be unpleasant to look at.
+        </p>
+    </div>
+  </div>
+  <div class="rightcolumn">
+    <div class="card">
+      <h2>About Me</h2>
+      <div class="fakeimg" style="height:100px;">Image</div>
+      <p>Some text about me in culpa qui officia deserunt mollit anim..</p>
+    </div>
+    <div class="card">
+      <h3>Popular Post</h3>
+      <div class="fakeimg"><p></p></div>
+      <div class="fakeimg"><p>Image</p></div>
+      <div class="fakeimg"><p>Image</p></div>
+    </div>
+    <div class="card">
+      <h3>Follow Me</h3>
+      <p>Some text..</p>
+    </div>
+  </div>
+</div>
+
+<div class="footer">
+  <h2>Footer</h2>
+</div>
+
+</body>
+</html>

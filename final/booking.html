@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+
+   <meta charset="utf-8" />
+   <title>La Plaque</title>
+   <link href="book.css" rel="stylesheet" />
+</head>
+
+<body>
+   <header>
+    <div class="header">
+        <img src="logo2.png" usemap="#home" style="height:200px; width:300px;">
+        <map name="home">
+           <area shape="rect" coords="0,0,500,700" href="home.html" alt="home">
+        </map>
+     </div>
+     <div class="topnav">
+        <a href="home.html">Home</a>
+        <a href="menu.html">MENU</a>
+        <a href="Restaurant.html">Resterant</a>
+        <a href="Order.html">Orders</a>
+        <a href="booking.html" style="float:right">BOOKING</a>
+     </div>
+      
+   </header>
+   <div class="card">
+   
+      <h1>Customer Information</h1>
+
+      <form action="http://www.example.com/redball" method="post">
+        <div>
+            <fieldset id="custName">
+                <legend>NAME</legend>
+                <label for="nameBox">Name*</label>
+                <input type="text" name="custName" id="nameBox" placeholder="First and Last Name" required />
+
+            </fieldset>
+        </div>
+        <div>
+            <fieldset id="custPhone">
+                <legend>PHONE</legend>
+                <label for = "phoneBox">Phone*</label>
+                <input type = "tel" name = "custPhone" id = "phoneBox" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" required />
+            </fieldset>
+        </div>
+        <div>
+            <fieldset id = "hereInfo">
+                <legend>DONE IN</legend>
+                <label for="delBox">please Enter how many people come.</label>
+                <input type="text" name="hereInfo" id="delBox" required />
+                <label for ="delBox">Please enter y'all coming time.</label>
+                <input type="time" name = "hereInfo" id = "delBox"/>
+             </fieldset>
+        </div>
+            
+         <input type="submit" value="Submit your table.">
+  
+      </form>
+</div>
+     
+    </form> 
+    <form action="http://www.example.com/redball" method="post">
+        
+        
+        <div class="card">
+            <fieldset id = "togo">
+                <legend>TOGO</legend>
+                <label for = "pickupBox">Please go to <a href="Order.html">Order</a> page to place your order</label>
+                
+             </fieldset>
+
+        </div>
+    </form>
+
+   <footer>
+    <div class="footer">
+        <p>Thank you for using our online ordering form for quick and easy
+            orders. Please enter your name and phone number and whether you
+            want to place an order for delivery or pickup. Note that required
+            values are marked by an asterisk (*). If you
+            want to place your order over the phone, call us at
+            <a href="tel:+13865557499">(386) 555-7499</a>.</p>
+    </div>
+   </footer>
+</body>
+</html>
